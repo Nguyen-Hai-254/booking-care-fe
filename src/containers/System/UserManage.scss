@@ -1,0 +1,53 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.btn_edit {
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn_delete {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+td:last-child {
+    text-align: center;
+}

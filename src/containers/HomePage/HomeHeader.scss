@@ -1,0 +1,288 @@
+.home-header-container {
+    height: 68px;
+    // border: 1px solid red;
+    width: 100%;
+
+    .home-header-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+            // border: 1px solid red;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 30px;
+                padding-left: 25px;
+                color: grey;
+                cursor: pointer;
+            }
+
+            .header-logo {
+                background: url('../../assets/logo.svg') center no-repeat;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .center-content {
+            width: 50%;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 25px;
+
+            .child-content {
+                cursor: pointer;
+
+                .child-content-title {
+                    font-weight: 600;
+                    font-size: 13px;
+                    font-family: 'Roboto Condensed';
+                }
+
+                .child-content-description {
+                    font-weight: lighter;
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .right-content {
+            width: 25%;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .support {
+                justify-content: right;
+                cursor: pointer;
+
+                .support-group {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+
+                    i {
+                        font-size: 18px;
+                        color: #45c3d2;
+                    }
+
+                    .support-letter {
+                        color: #969495;
+                        font-size: 18px;
+                    }
+                }
+
+                .support-phone {
+                    color: #45c3d2;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .flag {
+            font-size: 13px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+.home-banner-container {
+    background: url('../../assets/background-banner.jpg') no-repeat center;
+    height: 115vh;
+    background-size: cover;
+
+    // opacity: 0.7;
+
+    .background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+        height: 60vh;
+
+        .title1-banner {
+            padding-top: 100px;
+            font-size: 32px;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px #333;
+            text-align: center;
+        }
+
+        .title2-banner {
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px #333;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .search-banner {
+            margin: 10px auto;
+            width: 30%;
+            min-width: 300px;
+            position: relative;
+            // z-index: 2;
+            min-height: 15vh;
+            display: flex;
+
+            i {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #333;
+                text-align: center;
+            }
+
+
+            .search-form {
+                background: #f7d800;
+                // color: #fff;
+                outline: none;
+                border-radius: 25px;
+                border: 1px solid transparent;
+                line-height: 50px;
+                height: 50px;
+                padding-left: 50px;
+                padding-right: 25px;
+                // position: relative;
+                width: 100%;
+            }
+
+        }
+
+        .options-banner {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+            padding-top: 30px;
+
+            .row-option {
+                display: flex;
+                justify-content: space-around;
+
+                .option-child {
+                    width: 15%;
+
+                    .option-child-border {
+                        background: #fff;
+                        border-radius: 50%;
+                        -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+                        -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+                        width: 50px;
+                        height: 50px;
+                        margin: 2px auto;
+
+                        .icon-kham-chuyen-khoa {
+                            background: url('../../assets/images/option-icon/161905-iconkham-chuyen-khoa.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-kham-tu-xa {
+                            background: url('../../assets/images/option-icon/161817-iconkham-tu-xa.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-kham-tong-quat {
+                            background: url('../../assets/images/option-icon/161350-iconkham-tong-quan.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-xnyh {
+                            background: url('../../assets/images/option-icon/161340-iconxet-nghiem-y-hoc.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-sktt {
+                            background: url('../../assets/images/option-icon/161403-iconsuc-khoe-tinh-than.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-knk {
+                            background: url('../../assets/images/option-icon/161410-iconkham-nha-khoa.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-gpt {
+                            background: url('../../assets/images/option-icon/161421-icongoi-phau-thuat.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-sktd {
+                            background: url('../../assets/images/option-icon/145536-thiet-ke-chua-co-ten-4.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-btsk {
+                            background: url('../../assets/images/option-icon/161442-iconbai-test-suc-khoe2.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .icon-ytgb {
+                            background: url('../../assets/images/option-icon/163421-153524-near-home-01.png');
+                            height: 50px;
+                            background-size: 32px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                    }
+
+                    .option-child-text {
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .row-option:last-child {
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+}
