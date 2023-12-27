@@ -1,0 +1,122 @@
+.section-container {
+    height: 330px;
+    background-color: #f5f5f5;
+
+    @media (min-width: 768px) {
+        .section-content {
+            width: 750px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .section-content {
+            width: 970px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .section-content {
+            width: 1170px;
+        }
+    }
+
+    .section-content {
+        margin: 0 auto;
+
+        .section-title {
+            padding-top: 25px;
+            margin: 0 5px;
+            display: flex;
+
+            .title-name {
+                font-weight: bold;
+            }
+
+            .more {
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 10px 0;
+                font-size: 11px;
+                text-decoration: none;
+                margin: auto 0 auto auto;
+            }
+
+            @media (min-width: 768px) {
+                .more {
+                    background: #ebebeb;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding: 10px 15px;
+                    color: #282e41;
+                }
+            }
+
+            .more:hover {
+                background: #FFC419;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+
+
+
+        .section-list {
+            margin-top: 20px;
+            height: 135px;
+
+            .section-item {
+                height: 200px;
+                margin: 5px;
+
+                .section-img {
+                    background-image: url('../../../assets/images/co-xuong-khop.jpg');
+
+                    height: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #eee;
+                    margin: 0 5px;
+                }
+
+                .h3 {
+                    margin: 10px 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .section-list {
+            height: 200px;
+        }
+    }
+}
+
+.slick-prev {
+    z-index: 3;
+    left: -19px !important;
+}
+
+.slick-next {
+    right: -7px !important;
+}
+
+.slick-prev:before {
+    content: "\2770" !important;
+}
+
+.slick-next:before {
+    content: "\2771" !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-family: 'Glyphicons Halflings' !important;
+    background: #fff;
+    border: 2px solid #d7d7d7;
+    color: #959595 !important;
+    font-size: 54px !important;
+    padding: 0 7px !important;
+}

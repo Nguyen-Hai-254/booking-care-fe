@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import HomeHeader from './HomeHeader.scss';
-import { Col, Container, Row } from 'reactstrap';
+import { FormattedMessage } from 'react-intl';
+import './HomeHeader.scss';
+import { changeLanguage } from '../../store/actions/appActions';
 
 class HomePage extends Component {
+    clickChangeLanguage = () => {
+        this.props.changeLanguageApp()
+    }
 
     render() {
         return (
@@ -19,23 +21,23 @@ class HomePage extends Component {
 
                         <div className='center-content'>
                             <div className='child-content'>
-                                <div className='child-content-title'>Chuyên Khoa</div>
-                                <div className='child-content-description'>Tìm bác sĩ theo chuyên khoa</div>
+                                <div className='child-content-title'><FormattedMessage id="homeHeader.specialty" /></div>
+                                <div className='child-content-description'><FormattedMessage id="homeHeader.Find_a_doctor_on_request" /></div>
                             </div>
 
                             <div className='child-content'>
-                                <div className='child-content-title'>Cơ sở y tế</div>
-                                <div className='child-content-description'>Chọn bệnh viện theo phòng khám</div>
+                                <div className='child-content-title'><FormattedMessage id="homeHeader.health_facility" /></div>
+                                <div className='child-content-description'><FormattedMessage id="homeHeader.Choose_a_hospital_or_clinic" /></div>
                             </div>
 
                             <div className='child-content'>
-                                <div className='child-content-title'>Bác sĩ</div>
-                                <div className='child-content-description'>Chọn bác sĩ giỏi</div>
+                                <div className='child-content-title'><FormattedMessage id="homeHeader.doctor" /></div>
+                                <div className='child-content-description'><FormattedMessage id="homeHeader.Choose_a_good_doctor" /></div>
                             </div>
 
                             <div className='child-content'>
-                                <div className='child-content-title'>Gói khám</div>
-                                <div className='child-content-description'>Khám sức khỏe tổng quát</div>
+                                <div className='child-content-title'><FormattedMessage id="homeHeader.medical_package" /></div>
+                                <div className='child-content-description'><FormattedMessage id="homeHeader.General_health_check" /></div>
                             </div>
                         </div>
 
@@ -43,29 +45,36 @@ class HomePage extends Component {
                             <div className='support'>
                                 <div className='support-group'>
                                     <i className="fa-solid fa-circle-question"></i>
-                                    <div className='support-letter'>Hỗ trợ</div>
+                                    <div className='support-letter'>
+                                        <FormattedMessage id="homeHeader.support" />
+                                    </div>
                                 </div>
                                 <div className='support-phone'>0123-456-789</div>
                             </div>
-                            <div className='flag'>VN</div>
+                            <div className='language' onClick={() => this.clickChangeLanguage()}>
+                                <FormattedMessage id="homeHeader.language" />
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className='home-banner-container'>
                     <div className='background'>
-                        <div className='title1-banner'>
-                            NỀN TẢNG Y TẾ
-                        </div>
-                        <div className='title2-banner'>
-                            CHĂM SÓC SỨC KHỎE TOÀN DIỆN
-                        </div>
-                        <div className='search-banner'>
-                            <i className="fas fa-search"></i>
+                        <div className='titleAndSearch'>
+                            <div className='title1-banner'>
+                                <FormattedMessage id="banner.title1" />
+                            </div>
+                            <div className='title2-banner'>
+                                <FormattedMessage id="banner.title2" />
+                            </div>
+                            <div className='search-banner'>
+                                <i className="fas fa-search"></i>
 
-                            <input className='search-form' type='text' placeholder='Tìm kiếm phòng khám' />
+                                <input className='search-form' type='text' placeholder='Tìm kiếm phòng khám' />
 
+                            </div>
                         </div>
+
 
                         <div className='options-banner'>
                             <div className='row-option'>
@@ -74,7 +83,7 @@ class HomePage extends Component {
                                         <div className='icon-kham-chuyen-khoa'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Khám chuyên khoa
+                                        <FormattedMessage id="banner.specialist_examination" />
                                     </div>
                                 </div>
                                 <div className='option-child'>
@@ -82,7 +91,7 @@ class HomePage extends Component {
                                         <div className='icon-kham-tu-xa'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Khám từ xa
+                                        <FormattedMessage id="banner.remote_examination" />
                                     </div>
                                 </div>
 
@@ -91,7 +100,7 @@ class HomePage extends Component {
                                         <div className='icon-kham-tong-quat'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Khám tổng quát
+                                        <FormattedMessage id="banner.general_examination" />
                                     </div>
                                 </div>
 
@@ -100,7 +109,7 @@ class HomePage extends Component {
                                         <div className='icon-xnyh'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Xét nghiệm y học
+                                        <FormattedMessage id="banner.Medical_tests" />
                                     </div>
                                 </div>
 
@@ -109,7 +118,7 @@ class HomePage extends Component {
                                         <div className='icon-sktt'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Sức khỏe tinh thần
+                                        <FormattedMessage id="banner.Mental_health" />
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +128,7 @@ class HomePage extends Component {
                                         <div className='icon-knk'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Khám nha khoa
+                                        <FormattedMessage id="banner.Dental_examination" />
                                     </div>
                                 </div>
 
@@ -128,7 +137,7 @@ class HomePage extends Component {
                                         <div className='icon-gpt'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Gói phẫu thuật
+                                        <FormattedMessage id="banner.Surgical_package" />
                                     </div>
                                 </div>
 
@@ -137,7 +146,7 @@ class HomePage extends Component {
                                         <div className='icon-sktd'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Sức khỏe tiểu đường
+                                        <FormattedMessage id="banner.Diabetes_health" />
                                     </div>
                                 </div>
 
@@ -146,7 +155,7 @@ class HomePage extends Component {
                                         <div className='icon-btsk'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Bài test sức khỏe
+                                        <FormattedMessage id="banner.Healthy_test" />
                                     </div>
                                 </div>
 
@@ -155,7 +164,7 @@ class HomePage extends Component {
                                         <div className='icon-ytgb'></div>
                                     </div>
                                     <div className='option-child-text'>
-                                        Y tế gần bạn
+                                        <FormattedMessage id="banner.Medical_near_you" />
                                     </div>
                                 </div>
                             </div>
@@ -171,12 +180,13 @@ class HomePage extends Component {
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+        isLoggedIn: state.user.isLoggedIn,
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
+        changeLanguageApp: () => dispatch(changeLanguage())
     };
 };
 

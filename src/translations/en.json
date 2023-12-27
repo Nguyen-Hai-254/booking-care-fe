@@ -1,4 +1,34 @@
 {
+    "homeHeader": {
+        "specialty": "Specialty",
+        "Find_a_doctor_on_request": "Find a doctor on request",
+        "health_facility": "Health facility",
+        "Choose_a_hospital_or_clinic": "Choose a hospital or clinic",
+        "doctor": "Doctor",
+        "Choose_a_good_doctor": "Choose a good doctor",
+        "medical_package": "Medical package",
+        "General_health_check": "General health check",
+        "support": "Support",
+        "language": "EN"
+    },
+    "banner": {
+        "title1": "Medical background",
+        "title2": "COMPREHENSIVE HEALTH CARE",
+        "specialist_examination": "Specialist examination",
+        "remote_examination": "Remote examination",
+        "general_examination": "General examination",
+        "Medical_tests": "Medical tests",
+        "Mental_health": "Mental health",
+        "Dental_examination": "Dental examination",
+        "Surgical_package": "Surgical package",
+        "Diabetes_health": "Diabetes health",
+        "Healthy_test": "Healthy test",
+        "Medical_near_you": "Medical near you"
+    },
+    "home": {
+        "specialty":"Specialty",
+        "more": "See more"
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",

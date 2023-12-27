@@ -1,4 +1,34 @@
 {
+    "homeHeader": {
+        "specialty": "Chuyên khoa",
+        "Find_a_doctor_on_request": "Tìm bác sĩ theo yêu cầu",
+        "health_facility": "Cơ sở y tế",
+        "Choose_a_hospital_or_clinic": "Chọn bệnh viện phòng khám",
+        "doctor": "Bác sĩ",
+        "Choose_a_good_doctor": "Chọn bác sĩ giỏi",
+        "medical_package": "Gói khám",
+        "General_health_check": "Khám sức khỏe tổng quát",
+        "support": "Hỗ trợ",
+        "language": "VI"
+    },
+    "banner": {
+        "title1": "Nền tảng y tế",
+        "title2": "chăm sóc sức khỏe toàn diện",
+        "specialist_examination": "Khám chuyên khoa",
+        "remote_examination": "Khám từ xa",
+        "general_examination": "Khám tổng quát",
+        "Medical_tests": "Xét nghiệm y học",
+        "Mental_health": "Sức khỏe tinh thần",
+        "Dental_examination": "Khám nha khoa",
+        "Surgical_package": "Gói phẫu thuật",
+        "Diabetes_health": "Sức khỏe tiểu đường",
+        "Healthy_test": "Bài test sức khỏe",
+        "Medical_near_you": "Y tế gần bạn"
+    },
+    "home": {
+        "specialty":"Chuyên khoa phổ biến",
+        "more": "Xem thêm"
+    },
     "common": {
         "add": "Thêm",
         "edit": "Sửa",
